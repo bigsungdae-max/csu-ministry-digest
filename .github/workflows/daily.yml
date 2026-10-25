@@ -33,6 +33,7 @@ jobs:
         run: gh secret set KAKAO_REFRESH_TOKEN < .new_refresh_token && rm .new_refresh_token
 
       - name: 정리 페이지 올리기
+        if: always() # 카톡 전송이 실패해도 페이지는 올립니다
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"

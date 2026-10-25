@@ -7,7 +7,7 @@
 // .env 파일은 GitHub에 올라가지 않아요(.gitignore).
 
 import { createServer } from 'node:http';
-import { writeFile } from 'node:fs/promises';
+import { readFile, writeFile } from 'node:fs/promises';
 import { kakaoExchangeCode } from './kakao.mjs';
 
 const PORT = 8765;
@@ -45,11 +45,27 @@ const FORM = page(`
 let key = '';
 let secret = '';
 
+// 이미 .env가 있으면 저장된 키를 다시 써서, 입력 없이 바로 카카오 로그인으로 보냅니다.
+try {
+  const saved = Object.fromEntries(
+    (await readFile(ENV_FILE, 'utf8')).split('\n').filter(Boolean).map((l) => [l.slice(0, l.indexOf('=')), l.slice(l.indexOf('=') + 1)]),
+  );
+  key = saved.KAKAO_REST_API_KEY || '';
+  secret = saved.KAKAO_CLIENT_SECRET || '';
+} catch {}
+
+const authUrl = () =>
+  'https://kauth.kakao.com/oauth/authorize?' +
+  new URLSearchParams({ client_id: key, redirect_uri: REDIRECT_URI, response_type: 'code', scope: 'talk_message' });
+
 const server = createServer(async (req, res) => {
   const url = new URL(req.url, `http://localhost:${PORT}`);
   const html = (s) => res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' }).end(s);
 
-  if (url.pathname === '/' && req.method === 'GET') return html(FORM);
+  if (url.pathname === '/' && req.method === 'GET') {
+    if (key) return res.writeHead(302, { Location: authUrl() }).end();
+    return html(FORM);
+  }
 
   if (url.pathname === '/start' && req.method === 'POST') {
     let raw = '';
@@ -57,10 +73,7 @@ const server = createServer(async (req, res) => {
     const form = new URLSearchParams(raw);
     key = (form.get('key') || '').trim();
     secret = (form.get('secret') || '').trim();
-    const authUrl =
-      'https://kauth.kakao.com/oauth/authorize?' +
-      new URLSearchParams({ client_id: key, redirect_uri: REDIRECT_URI, response_type: 'code', scope: 'talk_message' });
-    return res.writeHead(302, { Location: authUrl }).end();
+    return res.writeHead(302, { Location: authUrl() }).end();
   }
 
   if (url.pathname === '/callback') {
