@@ -69,13 +69,10 @@ KAKAO_REST_API_KEY=여기에REST키 node kakao-auth.mjs
 | `KAKAO_REST_API_KEY` | 1단계의 REST API 키 |
 | `KAKAO_REFRESH_TOKEN` | 2단계의 리프레시 토큰 |
 | `KAKAO_CLIENT_SECRET` | (Client Secret 사용 시만) |
-| `GH_PAT` | 아래 설명 참고 |
+| `TOKEN_KEY` | 아래 설명 참고 |
 
-**`GH_PAT` 만들기** — 카카오 토큰은 2개월마다 바뀌는데, 이걸 자동으로 저장하려면 필요해요.
-GitHub 오른쪽 위 프로필 → **Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token**
-- Repository access: **Only select repositories** → `csu-ministry-digest`
-- Permissions → Repository permissions → **Secrets: Read and write**
-- 만료 기간: 가장 길게(1년) → 생성된 값을 `GH_PAT` 에 넣기 (1년 뒤 다시 만들어야 해요)
+**`TOKEN_KEY`** — 카카오 토큰은 2개월마다 바뀌는데, 바뀐 토큰을 암호화해서 `state/` 폴더에 저장할 때 쓰는 암호 키예요.
+터미널에서 `openssl rand -hex 32 | ./tools/gh secret set TOKEN_KEY` 로 만들면 값이 화면에 보이지 않아요.
 
 ### 5단계. GitHub Pages 켜기
 

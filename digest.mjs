@@ -13,6 +13,7 @@
 
 import { mkdir, readdir, writeFile } from 'node:fs/promises';
 import { kakaoRefresh, kakaoSendMemo } from './kakao.mjs';
+import { loadRefreshToken, saveRefreshToken } from './token-store.mjs';
 
 const API = 'https://www.csu.ac.kr/api/user/board/getBoardContentSummaryList';
 const BOARD_ID = 178; // 사역게시판
@@ -261,11 +262,24 @@ async function main() {
 
   const pagesUrl = (process.env.PAGES_URL || '').replace(/\/?$/, '/');
   const link = process.env.PAGES_URL ? `${pagesUrl}${date}.html` : BOARD_URL;
-  const { accessToken, newRefreshToken } = await kakaoRefresh();
-  // 카카오가 새 리프레시 토큰을 줬으면 파일로 남겨, GitHub Actions가 저장하게 합니다.
+  // 암호화 저장된 토큰(자동 갱신분)을 먼저 쓰고, 안 되면 GitHub Secret의 토큰을 씁니다.
+  // (kakao-auth.mjs로 다시 연결해 Secret을 바꾼 경우에도 동작하도록)
+  const candidates = [...new Set([await loadRefreshToken(), process.env.KAKAO_REFRESH_TOKEN].filter(Boolean))];
+  let result;
+  for (const [i, token] of candidates.entries()) {
+    try {
+      result = await kakaoRefresh(token);
+      break;
+    } catch (e) {
+      if (i === candidates.length - 1) throw e;
+      console.log('저장된 토큰이 만료돼서 Secret의 토큰으로 다시 시도해요.');
+    }
+  }
+  const { accessToken, newRefreshToken } = result;
+  // 카카오가 새 리프레시 토큰을 줬으면 암호화해서 저장소에 보관합니다.
   if (newRefreshToken) {
-    await writeFile(new URL('./.new_refresh_token', import.meta.url), newRefreshToken);
-    console.log('새 리프레시 토큰을 받았어요.');
+    if (await saveRefreshToken(newRefreshToken)) console.log('새 리프레시 토큰을 암호화해서 저장했어요.');
+    else console.warn('⚠️ TOKEN_KEY가 없어서 새 리프레시 토큰을 저장하지 못했어요.');
   }
   await kakaoSendMemo(accessToken, text, link);
   console.log('카톡 전송 완료');

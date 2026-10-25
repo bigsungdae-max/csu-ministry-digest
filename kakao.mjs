@@ -31,11 +31,11 @@ export async function kakaoExchangeCode(code, redirectUri) {
 
 // 리프레시 토큰으로 새 액세스 토큰 받기.
 // 리프레시 토큰은 2개월 동안 유효하고, 만료 1개월 전부터는 갱신할 때 새 리프레시 토큰이 함께 와요.
-export async function kakaoRefresh() {
+export async function kakaoRefresh(refreshToken = env('KAKAO_REFRESH_TOKEN')) {
   const params = {
     grant_type: 'refresh_token',
     client_id: env('KAKAO_REST_API_KEY'),
-    refresh_token: env('KAKAO_REFRESH_TOKEN'),
+    refresh_token: refreshToken,
   };
   if (process.env.KAKAO_CLIENT_SECRET) params.client_secret = process.env.KAKAO_CLIENT_SECRET;
   const json = await postForm('https://kauth.kakao.com/oauth/token', params);
