@@ -2,7 +2,7 @@ name: 매일 사역게시판 정리
 
 on:
   schedule:
-    - cron: '0 22 * * *' # UTC 22:00 = 한국 시간 아침 7시 (GitHub 사정으로 몇 분~수십 분 늦을 수 있어요)
+    - cron: '43 21 * * *' # UTC 21:43 = 한국 시간 6:43. 정각엔 GitHub 예약이 몰려 20분 이상 늦어져서 피했어요
   workflow_dispatch: # Actions 탭에서 'Run workflow' 버튼으로 바로 실행
 
 permissions:
