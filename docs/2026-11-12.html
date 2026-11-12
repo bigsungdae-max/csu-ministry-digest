@@ -1,0 +1,837 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>사역게시판 11/12(목)</title>
+<style>
+  :root { --bg:#f6f5f2; --card:#fff; --text:#1d1d1f; --sub:#6b6b70; --line:#e6e4df; --accent:#2f5d8a; --chip:#eaeef3; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#161618; --card:#202023; --text:#ececee; --sub:#9a9aa1; --line:#333338; --accent:#8db6e0; --chip:#2a2f36; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:-apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; line-height:1.5; }
+  main { max-width:720px; margin:0 auto; padding:20px 16px 60px; }
+  header h1 { font-size:22px; margin:0 0 4px; }
+  header p { margin:0 0 14px; color:var(--sub); font-size:14px; }
+  header p a { color:var(--accent); }
+  input[type=search] { width:100%; padding:11px 14px; font-size:16px; border:1px solid var(--line); border-radius:10px; background:var(--card); color:var(--text); }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; margin:12px 0 4px; }
+  .chip { padding:4px 10px; border-radius:999px; background:var(--chip); color:var(--text); text-decoration:none; font-size:13px; }
+  section { margin-top:22px; }
+  h2 { font-size:17px; margin:0 0 8px; position:sticky; top:0; background:var(--bg); padding:6px 0; }
+  .count { color:var(--sub); font-weight:normal; font-size:14px; }
+  ul { list-style:none; margin:0; padding:0; background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+  li { padding:12px 14px; border-top:1px solid var(--line); }
+  li:first-child { border-top:0; }
+  li a { color:var(--text); text-decoration:none; font-weight:600; }
+  li a:visited { color:var(--sub); }
+  .meta, .dept { font-size:13px; color:var(--sub); margin-top:2px; }
+  .dept { color:var(--accent); }
+  .empty { color:var(--sub); text-align:center; padding:40px 0; }
+  footer { margin-top:36px; font-size:13px; color:var(--sub); }
+  footer .days { display:flex; flex-wrap:wrap; gap:8px; margin-top:6px; }
+  footer a { color:var(--accent); }
+  footer a.current { font-weight:700; text-decoration:none; color:var(--text); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>총신대 사역게시판 · 11/12(목)</h1>
+    <p>새 글 140개 · <a href="https://www.csu.ac.kr/?m1=page&menu_id=1110" target="_blank" rel="noopener">게시판 바로가기</a></p>
+    <input type="search" id="q" placeholder="검색 (예: 교육전도사, 청년부, 파트, 수원)">
+    <div class="chips"><a class="chip" href="#" data-go="경기">경기 61</a><a class="chip" href="#" data-go="서울">서울 43</a><a class="chip" href="#" data-go="부산">부산 8</a><a class="chip" href="#" data-go="전북">전북 6</a><a class="chip" href="#" data-go="경남">경남 4</a><a class="chip" href="#" data-go="전남광주">전남광주 4</a><a class="chip" href="#" data-go="인천">인천 4</a><a class="chip" href="#" data-go="대전">대전 4</a><a class="chip" href="#" data-go="대구">대구 2</a><a class="chip" href="#" data-go="충남">충남 2</a><a class="chip" href="#" data-go="충북">충북 1</a><a class="chip" href="#" data-go="경북">경북 1</a></div>
+  </header>
+  
+  <section data-region="경기">
+    <h2>경기 <span class="count">61</span></h2>
+    <ul>
+      <li data-text="남양주광염교회(http://www.nls.or.kr)에서 전임부목사를 청빙합니다. 남양주광염교회 경기 남양주시 다산동 전임: 고등부와 장년교구/  준전임, 혹은 파트: 고등부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127062" target="_blank" rel="noopener">남양주광염교회(http://www.nls.or.kr)에서 전임부목사를 청빙합니다.</a>
+        <div class="meta">남양주광염교회 · 경기 남양주시 다산동</div>
+        <div class="dept">전임: 고등부와 장년교구/  준전임, 혹은 파트: 고등부</div>
+      </li>
+      <li data-text="예담교회에서 전임사역자(목사,강도사,전도사)를 모십니다. 예담교회 경기 고양시 일산서구 탄현동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127061" target="_blank" rel="noopener">예담교회에서 전임사역자(목사,강도사,전도사)를 모십니다.</a>
+        <div class="meta">예담교회 · 경기 고양시 일산서구 탄현동</div>
+        
+      </li>
+      <li data-text="(용인) 전대중앙교회에서 동역할 파트 사역자를 정중히 청빙합니다. 전대중앙교회 경기 용인시 처인구 전대리 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127059" target="_blank" rel="noopener">(용인) 전대중앙교회에서 동역할 파트 사역자를 정중히 청빙합니다.</a>
+        <div class="meta">전대중앙교회 · 경기 용인시 처인구 전대리</div>
+        
+      </li>
+      <li data-text="[끌어올림] 부천 약대중앙교회에서 파트(유년부), 파트(유치부) 동역자를 정중히 모십니다. 약대중앙교회 경기 부천시 원미구 약대동 유년부, 유치부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127058" target="_blank" rel="noopener">[끌어올림] 부천 약대중앙교회에서 파트(유년부), 파트(유치부) 동역자를 정중히 모십니다.</a>
+        <div class="meta">약대중앙교회 · 경기 부천시 원미구 약대동</div>
+        <div class="dept">유년부, 유치부</div>
+      </li>
+      <li data-text="[끌어올림] 평화교회에서 함께 동역할 청년부 전임 사역자를 모십니다. 남양주 평화교회 경기 남양주시 다산동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127057" target="_blank" rel="noopener">[끌어올림] 평화교회에서 함께 동역할 청년부 전임 사역자를 모십니다.</a>
+        <div class="meta">남양주 평화교회 · 경기 남양주시 다산동</div>
+        
+      </li>
+      <li data-text="[성남영도교회] 부목사님, 여전도사님, 교육부, 사랑부(지적장애) 를 섬겨주실 동역자를 청빙합니다.(추가 모집) 성남영도교회 경기 성남시 중원구 하대원동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127054" target="_blank" rel="noopener">[성남영도교회] 부목사님, 여전도사님, 교육부, 사랑부(지적장애) 를 섬겨주실 동역자를 청빙합니다.(추가 모집)</a>
+        <div class="meta">성남영도교회 · 경기 성남시 중원구 하대원동</div>
+        
+      </li>
+      <li data-text="충정교회에서 동역자를 모십니다(여자 전임 사역자) 충정교회 경기 고양시 일산동구 마두동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127048" target="_blank" rel="noopener">충정교회에서 동역자를 모십니다(여자 전임 사역자)</a>
+        <div class="meta">충정교회 · 경기 고양시 일산동구 마두동</div>
+        
+      </li>
+      <li data-text="창훈대교회에서 동역할 교역자를 모십니다. 창훈대교회 경기 수원시 장안구 연무동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127046" target="_blank" rel="noopener">창훈대교회에서 동역할 교역자를 모십니다.</a>
+        <div class="meta">창훈대교회 · 경기 수원시 장안구 연무동</div>
+        
+      </li>
+      <li data-text="양곡제일교회에서 사역자를 모집합니다(추가모집) 양곡제일교회 경기 김포시 양곡리 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127045" target="_blank" rel="noopener">양곡제일교회에서 사역자를 모집합니다(추가모집)</a>
+        <div class="meta">양곡제일교회 · 경기 김포시 양곡리</div>
+        
+      </li>
+      <li data-text="김포성문교회에서 함께 사역할 전임 목사님을 모십니다. 김포성문교회 경기 김포시 풍무동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127044" target="_blank" rel="noopener">김포성문교회에서 함께 사역할 전임 목사님을 모십니다.</a>
+        <div class="meta">김포성문교회 · 경기 김포시 풍무동</div>
+        
+      </li>
+      <li data-text="함께울고 함께웃는 &#39;신갈중앙교회&#39;에서 남자 전임교역자와 청년부 파트교역자(1년후 전임)를 정중히 모십니다.(여자 전임청빙완료) 신갈중앙교회 경기 용인시 기흥구 상갈동 교구, 청년">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127042" target="_blank" rel="noopener">함께울고 함께웃는 &#39;신갈중앙교회&#39;에서 남자 전임교역자와 청년부 파트교역자(1년후 전임)를 정중히 모십니다.(여자 전임청빙완료)</a>
+        <div class="meta">신갈중앙교회 · 경기 용인시 기흥구 상갈동</div>
+        <div class="dept">교구, 청년</div>
+      </li>
+      <li data-text="기쁨의교회 중고등부 사역자를 모십니다. 기쁨의교회 경기 하남시 덕풍동 중고등부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127040" target="_blank" rel="noopener">기쁨의교회 중고등부 사역자를 모십니다.</a>
+        <div class="meta">기쁨의교회 · 경기 하남시 덕풍동</div>
+        <div class="dept">중고등부</div>
+      </li>
+      <li data-text="(끌어올림)승현교회(부천)에서 동역자를 모십니다.(청년부, 중고등부) 승현교회 경기 부천시 소사구 괴안동 아래 내용 확인">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127039" target="_blank" rel="noopener">(끌어올림)승현교회(부천)에서 동역자를 모십니다.(청년부, 중고등부)</a>
+        <div class="meta">승현교회 · 경기 부천시 소사구 괴안동</div>
+        <div class="dept">아래 내용 확인</div>
+      </li>
+      <li data-text="의정부 열방교회에서 함께 동역할 교구 전임, 교육부서 파트(유년부8~9세) 사역자를 모십니다. 열방교회 경기 의정부시 신곡동 교구 전임, 교육부서 파트">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127038" target="_blank" rel="noopener">의정부 열방교회에서 함께 동역할 교구 전임, 교육부서 파트(유년부8~9세) 사역자를 모십니다.</a>
+        <div class="meta">열방교회 · 경기 의정부시 신곡동</div>
+        <div class="dept">교구 전임, 교육부서 파트</div>
+      </li>
+      <li data-text="수원성심교회에서 준전임 한 분과 파트사역자 한 분을 모십니다. 수원성심교회 경기 수원시 장안구 연무동 영유치부 , 유초등부 , 3040세대">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127037" target="_blank" rel="noopener">수원성심교회에서 준전임 한 분과 파트사역자 한 분을 모십니다.</a>
+        <div class="meta">수원성심교회 · 경기 수원시 장안구 연무동</div>
+        <div class="dept">영유치부 , 유초등부 , 3040세대</div>
+      </li>
+      <li data-text="[끌어올림] 수지기쁨의교회에서 귀한 동역자를 모십니다 (교구 1명, 초등부 파트 1명) 수지기쁨의교회 경기 용인시 수지구 풍덕천동 교구 1명(전임), 초등부(4~6학년) 파트 1명">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127035" target="_blank" rel="noopener">[끌어올림] 수지기쁨의교회에서 귀한 동역자를 모십니다 (교구 1명, 초등부 파트 1명)</a>
+        <div class="meta">수지기쁨의교회 · 경기 용인시 수지구 풍덕천동</div>
+        <div class="dept">교구 1명(전임), 초등부(4~6학년) 파트 1명</div>
+      </li>
+      <li data-text="고양동산교회에서 파트 전도사님을 모십니다. (중고등부, 찬양인도) 고양동산교회 경기 고양시 덕양구 동산동 중고등부, 찬양인도">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127031" target="_blank" rel="noopener">고양동산교회에서 파트 전도사님을 모십니다. (중고등부, 찬양인도)</a>
+        <div class="meta">고양동산교회 · 경기 고양시 덕양구 동산동</div>
+        <div class="dept">중고등부, 찬양인도</div>
+      </li>
+      <li data-text="▣ 2027년 기쁨의교회 교역자 청빙 공고 ▣ 기쁨의교회 경기 의왕시 내손동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127025" target="_blank" rel="noopener">▣ 2027년 기쁨의교회 교역자 청빙 공고 ▣</a>
+        <div class="meta">기쁨의교회 · 경기 의왕시 내손동</div>
+        
+      </li>
+      <li data-text="열방교회에서 함께 사역할 교역자 모십니다. 열방교회 경기 안성시 진사리 다음세대 중 1부서 및 찬양">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127023" target="_blank" rel="noopener">열방교회에서 함께 사역할 교역자 모십니다.</a>
+        <div class="meta">열방교회 · 경기 안성시 진사리</div>
+        <div class="dept">다음세대 중 1부서 및 찬양</div>
+      </li>
+      <li data-text="(용인) 전대중앙교회에서 동역할 파트 사역자를 정중히 청빙합니다. 전대중앙교회 경기 용인시 처인구 전대리 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127021" target="_blank" rel="noopener">(용인) 전대중앙교회에서 동역할 파트 사역자를 정중히 청빙합니다.</a>
+        <div class="meta">전대중앙교회 · 경기 용인시 처인구 전대리</div>
+        
+      </li>
+      <li data-text="파트/ 준전임 사역자분을 모십니다! 오산제일교회 경기 오산시 오산동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127012" target="_blank" rel="noopener">파트/ 준전임 사역자분을 모십니다!</a>
+        <div class="meta">오산제일교회 · 경기 오산시 오산동</div>
+        
+      </li>
+      <li data-text="★[안양장로교회] 사역의 확장으로 &#39;전임 사역자&#39;를 정중히 모십니다(찬양/행정/청년부) 안양장로교회 경기 안양시 만안구 박달동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127009" target="_blank" rel="noopener">★[안양장로교회] 사역의 확장으로 &#39;전임 사역자&#39;를 정중히 모십니다(찬양/행정/청년부)</a>
+        <div class="meta">안양장로교회 · 경기 안양시 만안구 박달동</div>
+        
+      </li>
+      <li data-text="산본 아름다운교회(경기도 군포시)에서 부목사 (전임) 사역자를 정중히 초빙합니다. 산본아름다운교회 경기 군포시 부곡동 교구행정 및 청년부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127008" target="_blank" rel="noopener">산본 아름다운교회(경기도 군포시)에서 부목사 (전임) 사역자를 정중히 초빙합니다.</a>
+        <div class="meta">산본아름다운교회 · 경기 군포시 부곡동</div>
+        <div class="dept">교구행정 및 청년부</div>
+      </li>
+      <li data-text="김포사랑스러운교회에서 함께 사역할 전임사역자를 초빙합니다. 김포사랑스러운교회 경기 김포시 구래동 아래">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127005" target="_blank" rel="noopener">김포사랑스러운교회에서 함께 사역할 전임사역자를 초빙합니다.</a>
+        <div class="meta">김포사랑스러운교회 · 경기 김포시 구래동</div>
+        <div class="dept">아래</div>
+      </li>
+      <li data-text="(용인) 전대중앙교회에서 동역할 파트 사역자를 정중히 청빙합니다. 전대중앙교회 경기 용인시 처인구 전대리 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127003" target="_blank" rel="noopener">(용인) 전대중앙교회에서 동역할 파트 사역자를 정중히 청빙합니다.</a>
+        <div class="meta">전대중앙교회 · 경기 용인시 처인구 전대리</div>
+        
+      </li>
+      <li data-text="남양주 방주교회에서 유초등부 파트 교역자를 모십니다. 방주교회 경기 남양주시 묵현리 유초등부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126993" target="_blank" rel="noopener">남양주 방주교회에서 유초등부 파트 교역자를 모십니다.</a>
+        <div class="meta">방주교회 · 경기 남양주시 묵현리</div>
+        <div class="dept">유초등부</div>
+      </li>
+      <li data-text="새빛교회에서 중고등부 전도사님을 모십니다. 새빛교회 경기 광명시 하안동 중고등부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126991" target="_blank" rel="noopener">새빛교회에서 중고등부 전도사님을 모십니다.</a>
+        <div class="meta">새빛교회 · 경기 광명시 하안동</div>
+        <div class="dept">중고등부</div>
+      </li>
+      <li data-text="[원천침례교회] 청소년부, 청년부 풀타임 사역자(전도사, 목사) 청빙 원천침례교회 경기 수원시 영통구 원천동 청소년부, 청년부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126990" target="_blank" rel="noopener">[원천침례교회] 청소년부, 청년부 풀타임 사역자(전도사, 목사) 청빙</a>
+        <div class="meta">원천침례교회 · 경기 수원시 영통구 원천동</div>
+        <div class="dept">청소년부, 청년부</div>
+      </li>
+      <li data-text="분당 더the사랑교회에서 함께 사역할 교역자 모십니다. 더the사랑교회 경기 성남시 분당구 구미동 교구여전도사, 다음세대">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126989" target="_blank" rel="noopener">분당 더THE사랑교회에서 함께 사역할 교역자 모십니다.</a>
+        <div class="meta">더THE사랑교회 · 경기 성남시 분당구 구미동</div>
+        <div class="dept">교구여전도사, 다음세대</div>
+      </li>
+      <li data-text="양곡제일교회에서 사역자를 모집합니다(추가모집) 양곡제일교회 경기 김포시 양곡리 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126986" target="_blank" rel="noopener">양곡제일교회에서 사역자를 모집합니다(추가모집)</a>
+        <div class="meta">양곡제일교회 · 경기 김포시 양곡리</div>
+        
+      </li>
+      <li data-text="교육부서 교육목사님 모십니다. 예림교회 경기 파주시 동패동 유년부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126981" target="_blank" rel="noopener">교육부서 교육목사님 모십니다.</a>
+        <div class="meta">예림교회 · 경기 파주시 동패동</div>
+        <div class="dept">유년부</div>
+      </li>
+      <li data-text="창대교회에서 함께할 동역자를 정중히 모십니다 창대교회 경기 하남시 감일동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126980" target="_blank" rel="noopener">창대교회에서 함께할 동역자를 정중히 모십니다</a>
+        <div class="meta">창대교회 · 경기 하남시 감일동</div>
+        
+      </li>
+      <li data-text="전대중앙교회에서 동역 할 파트 사역자를 정중히 청빙합니다. 전대중앙교회 경기 용인시 처인구 전대리 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126978" target="_blank" rel="noopener">전대중앙교회에서 동역 할 파트 사역자를 정중히 청빙합니다.</a>
+        <div class="meta">전대중앙교회 · 경기 용인시 처인구 전대리</div>
+        
+      </li>
+      <li data-text="(끌어올림) 남양주 금곡교회에서 동역자를 모십니다. 금곡교회 경기 남양주시 금곡동 청년부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126976" target="_blank" rel="noopener">(끌어올림) 남양주 금곡교회에서 동역자를 모십니다.</a>
+        <div class="meta">금곡교회 · 경기 남양주시 금곡동</div>
+        <div class="dept">청년부</div>
+      </li>
+      <li data-text="수원화산교회에서 2027년 함께 힘써 나아갈 동역자를 모십니다. 수원화산교회 경기 수원시 장안구 정자동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126973" target="_blank" rel="noopener">수원화산교회에서 2027년 함께 힘써 나아갈 동역자를 모십니다.</a>
+        <div class="meta">수원화산교회 · 경기 수원시 장안구 정자동</div>
+        
+      </li>
+      <li data-text="(끌어올림) 안산동산교회에서 함께할 취학팀 동역자(파트)를 초빙합니다. 안산동산교회 경기 안산시 상록구 사동 취학팀">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126968" target="_blank" rel="noopener">(끌어올림) 안산동산교회에서 함께할 취학팀 동역자(파트)를 초빙합니다.</a>
+        <div class="meta">안산동산교회 · 경기 안산시 상록구 사동</div>
+        <div class="dept">취학팀</div>
+      </li>
+      <li data-text="남양주광염교회 고등부 파트교역자 청빙 남양주광염교회 경기 남양주시 다산동 고등부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126966" target="_blank" rel="noopener">남양주광염교회 고등부 파트교역자 청빙</a>
+        <div class="meta">남양주광염교회 · 경기 남양주시 다산동</div>
+        <div class="dept">고등부</div>
+      </li>
+      <li data-text="양곡제일교회에서 사역자를 모집합니다(추가모집) 양곡제일교회 경기 김포시 양곡리 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126963" target="_blank" rel="noopener">양곡제일교회에서 사역자를 모집합니다(추가모집)</a>
+        <div class="meta">양곡제일교회 · 경기 김포시 양곡리</div>
+        
+      </li>
+      <li data-text="[끌어올림] 행복한교회 전임사역자를 정중히 모십니다. 행복한교회 경기 고양시 덕양구 관산동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126961" target="_blank" rel="noopener">[끌어올림] 행복한교회 전임사역자를 정중히 모십니다.</a>
+        <div class="meta">행복한교회 · 경기 고양시 덕양구 관산동</div>
+        
+      </li>
+      <li data-text="(끌어올림)승현교회(부천)에서 동역자를 모십니다.(청년부, 중고등부) 승현교회 경기 부천시 소사구 괴안동 아래 내용 확인">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126960" target="_blank" rel="noopener">(끌어올림)승현교회(부천)에서 동역자를 모십니다.(청년부, 중고등부)</a>
+        <div class="meta">승현교회 · 경기 부천시 소사구 괴안동</div>
+        <div class="dept">아래 내용 확인</div>
+      </li>
+      <li data-text="[청빙완료] 위례교회 2027년 교역자 청빙이 완료되었습니다. 감사합니다. 위례교회(we례교회) 경기 성남시 수정구 창곡동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126955" target="_blank" rel="noopener">[청빙완료] 위례교회 2027년 교역자 청빙이 완료되었습니다. 감사합니다.</a>
+        <div class="meta">위례교회(we례교회) · 경기 성남시 수정구 창곡동</div>
+        
+      </li>
+      <li data-text="평택 성문교회 전임 교역자 청빙 평택성문교회 경기 평택시 죽백동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126952" target="_blank" rel="noopener">평택 성문교회 전임 교역자 청빙</a>
+        <div class="meta">평택성문교회 · 경기 평택시 죽백동</div>
+        
+      </li>
+      <li data-text="송산그린시티 새솔동 섬기는 교회 부목사님을 모십니다. 섬기는 교회 경기 화성시 만세구 새솔동 행정 &amp; 유초등부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126950" target="_blank" rel="noopener">송산그린시티 새솔동 섬기는 교회 부목사님을 모십니다.</a>
+        <div class="meta">섬기는 교회 · 경기 화성시 만세구 새솔동</div>
+        <div class="dept">행정 &amp; 유초등부</div>
+      </li>
+      <li data-text="2027년 할렐루야교회 교역자 청빙공고 할렐루야교회 경기 성남시 분당구 야탑동 초등 1부(8-10세)">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126949" target="_blank" rel="noopener">2027년 할렐루야교회 교역자 청빙공고</a>
+        <div class="meta">할렐루야교회 · 경기 성남시 분당구 야탑동</div>
+        <div class="dept">초등 1부(8-10세)</div>
+      </li>
+      <li data-text="송산그린시티 새솔동 섬기는 교회 부목사님을 모십니다. 섬기는 교회 경기 화성시 만세구 새솔동 행정 &amp; 유초등부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126946" target="_blank" rel="noopener">송산그린시티 새솔동 섬기는 교회 부목사님을 모십니다.</a>
+        <div class="meta">섬기는 교회 · 경기 화성시 만세구 새솔동</div>
+        <div class="dept">행정 &amp; 유초등부</div>
+      </li>
+      <li data-text="남양주 신도시에 위치한 평내교회에서 전임목사님을 모십니다. 평내교회 경기 남양주시 평내동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126943" target="_blank" rel="noopener">남양주 신도시에 위치한 평내교회에서 전임목사님을 모십니다.</a>
+        <div class="meta">평내교회 · 경기 남양주시 평내동</div>
+        
+      </li>
+      <li data-text="남양주 신도시에 위치한 평내교회에서 다음 세대를 위한 사역자님들을 모십니다. 평내교회 경기 남양주시 평내동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126941" target="_blank" rel="noopener">남양주 신도시에 위치한 평내교회에서 다음 세대를 위한 사역자님들을 모십니다.</a>
+        <div class="meta">평내교회 · 경기 남양주시 평내동</div>
+        
+      </li>
+      <li data-text="김포성문교회에서 함께 사역할 교역자분을 모십니다. (주일학교 전임 목사, 교구 전임 여전도사) 김포성문교회 경기 김포시 풍무동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126939" target="_blank" rel="noopener">김포성문교회에서 함께 사역할 교역자분을 모십니다. (주일학교 전임 목사, 교구 전임 여전도사)</a>
+        <div class="meta">김포성문교회 · 경기 김포시 풍무동</div>
+        
+      </li>
+      <li data-text="[끌어올림] 위례신도시 동현교회에서 전임부목사님을 청빙합니다 동현교회 경기 하남시 학암동 행정 및 교구 담당 전임부목사">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126935" target="_blank" rel="noopener">[끌어올림] 위례신도시 동현교회에서 전임부목사님을 청빙합니다</a>
+        <div class="meta">동현교회 · 경기 하남시 학암동</div>
+        <div class="dept">행정 및 교구 담당 전임부목사</div>
+      </li>
+      <li data-text="미취학부 전임 여전도사님을 청빙합니다. (끌어올림) 벧엘교회 경기 파주시 와동동 미취학">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126928" target="_blank" rel="noopener">미취학부 전임 여전도사님을 청빙합니다. (끌어올림)</a>
+        <div class="meta">벧엘교회 · 경기 파주시 와동동</div>
+        <div class="dept">미취학</div>
+      </li>
+      <li data-text="&lt;끌어올림&gt; 수원 송원교회에서 함께 동역할 교역자를 모십니다. (전임목사, 유치부, 유년부(파트전도사) 송원교회 경기 수원시 장안구 송죽동 전임목사, 유치부, 유년부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126925" target="_blank" rel="noopener">&lt;끌어올림&gt; 수원 송원교회에서 함께 동역할 교역자를 모십니다. (전임목사, 유치부, 유년부(파트전도사)</a>
+        <div class="meta">송원교회 · 경기 수원시 장안구 송죽동</div>
+        <div class="dept">전임목사, 유치부, 유년부</div>
+      </li>
+      <li data-text="광명중앙교회에서 사무간사님을 모십니다. 광명중앙교회 경기 광명시 철산동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126923" target="_blank" rel="noopener">광명중앙교회에서 사무간사님을 모십니다.</a>
+        <div class="meta">광명중앙교회 · 경기 광명시 철산동</div>
+        
+      </li>
+      <li data-text="함께 사역할 전임 사역자(부목사, 강도사)를 정중히 모십니다.(주왕교회) 주왕교회 경기 시흥시 신천동 교구 &amp; 교육부서">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126922" target="_blank" rel="noopener">함께 사역할 전임 사역자(부목사, 강도사)를 정중히 모십니다.(주왕교회)</a>
+        <div class="meta">주왕교회 · 경기 시흥시 신천동</div>
+        <div class="dept">교구 &amp; 교육부서</div>
+      </li>
+      <li data-text="광명중앙교회에서 심방전도사님(여)을 모십니다. 광명중앙교회 경기 광명시 철산동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126921" target="_blank" rel="noopener">광명중앙교회에서 심방전도사님(여)을 모십니다.</a>
+        <div class="meta">광명중앙교회 · 경기 광명시 철산동</div>
+        
+      </li>
+      <li data-text="전임 교역자 청빙합니다. (끌어올림) 벧엘교회 경기 고양시 일산동구 장항동 교육부서">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126920" target="_blank" rel="noopener">전임 교역자 청빙합니다. (끌어올림)</a>
+        <div class="meta">벧엘교회 · 경기 고양시 일산동구 장항동</div>
+        <div class="dept">교육부서</div>
+      </li>
+      <li data-text="❖ 예정교회에서 2027년 함께 동역 할 전임교역자와 파트교역자를 모십니다. ❖ 예정교회 경기 남양주시 다산동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126919" target="_blank" rel="noopener">❖ 예정교회에서 2027년 함께 동역 할 전임교역자와 파트교역자를 모십니다. ❖</a>
+        <div class="meta">예정교회 · 경기 남양주시 다산동</div>
+        
+      </li>
+      <li data-text="초대중앙교회에서 함께하실 사역자를 정중히 모십니다(초등부, 유치부). 초대중앙교회 경기 이천시 증포동 1) 유초등부: 남자 교역자(전임)   2) 유치부: 여자 전도사(파트)">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126915" target="_blank" rel="noopener">초대중앙교회에서 함께하실 사역자를 정중히 모십니다(초등부, 유치부).</a>
+        <div class="meta">초대중앙교회 · 경기 이천시 증포동</div>
+        <div class="dept">1) 유초등부: 남자 교역자(전임)   2) 유치부: 여자 전도사(파트)</div>
+      </li>
+      <li data-text="반월제일교회에서 함께 동역할 전임 및 파트 사역자를 모십니다. 반월제일교회 경기 안산시 상록구 건건동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126914" target="_blank" rel="noopener">반월제일교회에서 함께 동역할 전임 및 파트 사역자를 모십니다.</a>
+        <div class="meta">반월제일교회 · 경기 안산시 상록구 건건동</div>
+        
+      </li>
+      <li data-text="[끌어올림] 시화동산교회에서 전임사역자를 초빙합니다 (교구+중고등부) 시화동산교회 경기 시흥시 정왕동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126912" target="_blank" rel="noopener">[끌어올림] 시화동산교회에서 전임사역자를 초빙합니다 (교구+중고등부)</a>
+        <div class="meta">시화동산교회 · 경기 시흥시 정왕동</div>
+        
+      </li>
+      <li data-text="[새갈릴리교회]에서 유초등부를 섬기실 교육전도사님을 청빙합니다 새갈릴리교회 경기 부천시 오정구 고강동 유초등부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126911" target="_blank" rel="noopener">[새갈릴리교회]에서 유초등부를 섬기실 교육전도사님을 청빙합니다</a>
+        <div class="meta">새갈릴리교회 · 경기 부천시 오정구 고강동</div>
+        <div class="dept">유초등부</div>
+      </li>
+      <li data-text="(끌어올림) 캐나다 캘거리 벧엘장로교회에서 동역자를 모집합니다. 캘거리 벧엘장로교회 경기 여주시 중암리 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126905" target="_blank" rel="noopener">(끌어올림) 캐나다 캘거리 벧엘장로교회에서 동역자를 모집합니다.</a>
+        <div class="meta">캘거리 벧엘장로교회 · 경기 여주시 중암리</div>
+        
+      </li>
+    </ul>
+  </section>
+  <section data-region="서울">
+    <h2>서울 <span class="count">43</span></h2>
+    <ul>
+      <li data-text="청년부와 찬양팀을 행복하게 섬길 분 모십니다.(끌어올림) 예수사랑교회(서울 염창동) 서울 강서구 염창동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127063" target="_blank" rel="noopener">청년부와 찬양팀을 행복하게 섬길 분 모십니다.(끌어올림)</a>
+        <div class="meta">예수사랑교회(서울 염창동) · 서울 강서구 염창동</div>
+        
+      </li>
+      <li data-text="(끌어올림) 도봉구 한길교회에서 전임사역자를 정중히 모십니다 한길교회 서울 도봉구 창동 전임(유초등부)">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127060" target="_blank" rel="noopener">(끌어올림) 도봉구 한길교회에서 전임사역자를 정중히 모십니다</a>
+        <div class="meta">한길교회 · 서울 도봉구 창동</div>
+        <div class="dept">전임(유초등부)</div>
+      </li>
+      <li data-text="동성교회에서 전임 부목사님을 모십니다. 동성교회 서울 광진구 중곡동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127049" target="_blank" rel="noopener">동성교회에서 전임 부목사님을 모십니다.</a>
+        <div class="meta">동성교회 · 서울 광진구 중곡동</div>
+        
+      </li>
+      <li data-text="초등부 파트사역자 혹은 준전임사역자를 모십니다 이루는교회 서울 관악구 봉천동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127043" target="_blank" rel="noopener">초등부 파트사역자 혹은 준전임사역자를 모십니다</a>
+        <div class="meta">이루는교회 · 서울 관악구 봉천동</div>
+        
+      </li>
+      <li data-text="돈암제일교회에서 유치부 전도사님을 모십니다^^ 돈암제일교회 서울 성북구 동소문동6가 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127032" target="_blank" rel="noopener">돈암제일교회에서 유치부 전도사님을 모십니다^^</a>
+        <div class="meta">돈암제일교회 · 서울 성북구 동소문동6가</div>
+        
+      </li>
+      <li data-text="서울 광진구 동서울성현교회에서 교역자를 청빙합니다!! 동서울성현교회 서울 광진구 구의동 유치부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127024" target="_blank" rel="noopener">서울 광진구 동서울성현교회에서 교역자를 청빙합니다!!</a>
+        <div class="meta">동서울성현교회 · 서울 광진구 구의동</div>
+        <div class="dept">유치부</div>
+      </li>
+      <li data-text="서울 성북동에 있는 성북교회에서 전임 사역자(목사, 기혼) 및 주일학교 파트 사역자(전도사, 강도사, 목사)를 청빙합니다. 성북교회 서울 성북구 성북동 전임 - 청년 및 교회 행정 전반 , 파트 - 유초등부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127018" target="_blank" rel="noopener">서울 성북동에 있는 성북교회에서 전임 사역자(목사, 기혼) 및 주일학교 파트 사역자(전도사, 강도사, 목사)를 청빙합니다.</a>
+        <div class="meta">성북교회 · 서울 성북구 성북동</div>
+        <div class="dept">전임 - 청년 및 교회 행정 전반 , 파트 - 유초등부</div>
+      </li>
+      <li data-text="동도교회와 함께 할 동역자를 모십니다. 동도교회 서울 동대문구 제기동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127016" target="_blank" rel="noopener">동도교회와 함께 할 동역자를 모십니다.</a>
+        <div class="meta">동도교회 · 서울 동대문구 제기동</div>
+        
+      </li>
+      <li data-text="동역자를 청빙합니다-관악구 면류관교회 면류관교회 서울 관악구 신림동 행정및 청년부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127010" target="_blank" rel="noopener">동역자를 청빙합니다-관악구 면류관교회</a>
+        <div class="meta">면류관교회 · 서울 관악구 신림동</div>
+        <div class="dept">행정및 청년부</div>
+      </li>
+      <li data-text="[끌어올림] 원동교회에서 교구, 교육디렉터 전임 목사님을 모십니다. 원동교회 서울 용산구 원효로2가 교구, 교육디렉터">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127004" target="_blank" rel="noopener">[끌어올림] 원동교회에서 교구, 교육디렉터 전임 목사님을 모십니다.</a>
+        <div class="meta">원동교회 · 서울 용산구 원효로2가</div>
+        <div class="dept">교구, 교육디렉터</div>
+      </li>
+      <li data-text="쌍문영광교회 유초등부 교육전도사님을 모십니다(파트) 쌍문영광교회 서울 도봉구 쌍문동 유초등부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127001" target="_blank" rel="noopener">쌍문영광교회 유초등부 교육전도사님을 모십니다(파트)</a>
+        <div class="meta">쌍문영광교회 · 서울 도봉구 쌍문동</div>
+        <div class="dept">유초등부</div>
+      </li>
+      <li data-text="샤론교회에서 함께 할 동역자(전임 2명, 파트 2명)를 모십니다. 샤론교회 서울 강서구 등촌동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127000" target="_blank" rel="noopener">샤론교회에서 함께 할 동역자(전임 2명, 파트 2명)를 모십니다.</a>
+        <div class="meta">샤론교회 · 서울 강서구 등촌동</div>
+        
+      </li>
+      <li data-text="잠실새내교회 전임목사 모십니다(끌어올림) 잠실새내교회 서울 송파구 잠실동 아래">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126999" target="_blank" rel="noopener">잠실새내교회 전임목사 모십니다(끌어올림)</a>
+        <div class="meta">잠실새내교회 · 서울 송파구 잠실동</div>
+        <div class="dept">아래</div>
+      </li>
+      <li data-text="맑은샘광천교회에서 영아부(교육파트) 교역자를 초빙합니다.[끌어올림] 맑은샘광천교회 서울 성북구 석관동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126998" target="_blank" rel="noopener">맑은샘광천교회에서 영아부(교육파트) 교역자를 초빙합니다.[끌어올림]</a>
+        <div class="meta">맑은샘광천교회 · 서울 성북구 석관동</div>
+        
+      </li>
+      <li data-text="성실교회 참사랑부에서 동역자를 모십니다. (끌어올림) 성실교회 서울 강북구 수유동 참사랑부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126997" target="_blank" rel="noopener">성실교회 참사랑부에서 동역자를 모십니다. (끌어올림)</a>
+        <div class="meta">성실교회 · 서울 강북구 수유동</div>
+        <div class="dept">참사랑부</div>
+      </li>
+      <li data-text="성실교회 영아부, 유아부에서 동역자를 모십니다. (끌어올림) 성실교회 서울 강북구 수유동 영아부, 유아부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126996" target="_blank" rel="noopener">성실교회 영아부, 유아부에서 동역자를 모십니다. (끌어올림)</a>
+        <div class="meta">성실교회 · 서울 강북구 수유동</div>
+        <div class="dept">영아부, 유아부</div>
+      </li>
+      <li data-text="영광교회(월곡동) 전임사역자를 모십니다. 영광교회 서울 성북구 하월곡동 아래">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126995" target="_blank" rel="noopener">영광교회(월곡동) 전임사역자를 모십니다.</a>
+        <div class="meta">영광교회 · 서울 성북구 하월곡동</div>
+        <div class="dept">아래</div>
+      </li>
+      <li data-text="왕십리교회에서 고등부 파트교역자를 모십니다 왕십리교회 서울 성동구 상왕십리동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126988" target="_blank" rel="noopener">왕십리교회에서 고등부 파트교역자를 모십니다</a>
+        <div class="meta">왕십리교회 · 서울 성동구 상왕십리동</div>
+        
+      </li>
+      <li data-text="성덕교회(상도동) 파트사역자를 찾습니다. 성덕교회 서울 동작구 상도동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126985" target="_blank" rel="noopener">성덕교회(상도동) 파트사역자를 찾습니다.</a>
+        <div class="meta">성덕교회 · 서울 동작구 상도동</div>
+        
+      </li>
+      <li data-text="서울 사당 삼광교회에서 함께 동역할 (유년부 사역자님)을 모십니다. 삼광교회 서울 동작구 사당동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126984" target="_blank" rel="noopener">서울 사당 삼광교회에서 함께 동역할 (유년부 사역자님)을 모십니다.</a>
+        <div class="meta">삼광교회 · 서울 동작구 사당동</div>
+        
+      </li>
+      <li data-text="(끌어올림) 관악구 성민교회에서 전임여전도사님 1인을 모십니다. 성민교회 서울 관악구 신림동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126983" target="_blank" rel="noopener">(끌어올림) 관악구 성민교회에서 전임여전도사님 1인을 모십니다.</a>
+        <div class="meta">성민교회 · 서울 관악구 신림동</div>
+        
+      </li>
+      <li data-text="왕성교회에서 함께 사역할 교역자를 모집합니다. 왕성교회 서울 관악구 신림동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126977" target="_blank" rel="noopener">왕성교회에서 함께 사역할 교역자를 모집합니다.</a>
+        <div class="meta">왕성교회 · 서울 관악구 신림동</div>
+        
+      </li>
+      <li data-text="준전임(부목사, 강도사)과 파트(청년부, 찬양단) 사역자를 모십니다. 성인교회 서울 강동구 천호동 준전임, 청년부, 찬양단">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126975" target="_blank" rel="noopener">준전임(부목사, 강도사)과 파트(청년부, 찬양단) 사역자를 모십니다.</a>
+        <div class="meta">성인교회 · 서울 강동구 천호동</div>
+        <div class="dept">준전임, 청년부, 찬양단</div>
+      </li>
+      <li data-text="신창동교회(서울시 도봉구 창동)에서 전임 사역자를 정중히 모십니다.(청년 / 교구) 신창동교회 서울 도봉구 창동 청년교구 / 장년교구">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126971" target="_blank" rel="noopener">신창동교회(서울시 도봉구 창동)에서 전임 사역자를 정중히 모십니다.(청년 / 교구)</a>
+        <div class="meta">신창동교회 · 서울 도봉구 창동</div>
+        <div class="dept">청년교구 / 장년교구</div>
+      </li>
+      <li data-text="[길신교회] 함께 할 동역자를 모십니다. 길신교회 서울 강동구 길동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126970" target="_blank" rel="noopener">[길신교회] 함께 할 동역자를 모십니다.</a>
+        <div class="meta">길신교회 · 서울 강동구 길동</div>
+        
+      </li>
+      <li data-text="일원중앙교회와 함께 할 귀중한 동역자(파트)를 모십니다 일원중앙교회 서울 강남구 일원동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126969" target="_blank" rel="noopener">일원중앙교회와 함께 할 귀중한 동역자(파트)를 모십니다</a>
+        <div class="meta">일원중앙교회 · 서울 강남구 일원동</div>
+        
+      </li>
+      <li data-text="동인교회에서 전임사역자(1명)를 정중히 모십니다 동인교회 서울 종로구 창신동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126962" target="_blank" rel="noopener">동인교회에서 전임사역자(1명)를 정중히 모십니다</a>
+        <div class="meta">동인교회 · 서울 종로구 창신동</div>
+        
+      </li>
+      <li data-text="북서울꿈의교회 2027년도 함께 하실 사역자분을 모십니다. 북서울꿈의교회 서울 강북구 번동 영, 유치부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126959" target="_blank" rel="noopener">북서울꿈의교회 2027년도 함께 하실 사역자분을 모십니다.</a>
+        <div class="meta">북서울꿈의교회 · 서울 강북구 번동</div>
+        <div class="dept">영, 유치부</div>
+      </li>
+      <li data-text="갈릴리교회에서 전임교역자를 모십니다. 갈릴리교회 서울 관악구 봉천동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126958" target="_blank" rel="noopener">갈릴리교회에서 전임교역자를 모십니다.</a>
+        <div class="meta">갈릴리교회 · 서울 관악구 봉천동</div>
+        
+      </li>
+      <li data-text="강동구 서울신흥교회에서 유초등부 교육전도사(파트) 사역자를 정중히 모십니다. 서울신흥교회 서울 강동구 암사동 초등부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126957" target="_blank" rel="noopener">강동구 서울신흥교회에서 유초등부 교육전도사(파트) 사역자를 정중히 모십니다.</a>
+        <div class="meta">서울신흥교회 · 서울 강동구 암사동</div>
+        <div class="dept">초등부</div>
+      </li>
+      <li data-text="삼락교회에서 동역자를 모십니다. 삼락교회 서울 노원구 상계동 중등부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126956" target="_blank" rel="noopener">삼락교회에서 동역자를 모십니다.</a>
+        <div class="meta">삼락교회 · 서울 노원구 상계동</div>
+        <div class="dept">중등부</div>
+      </li>
+      <li data-text="초등부 파트사역자 혹은 준전임사역자를 모십니다 이루는교회 서울 관악구 봉천동 초등부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126948" target="_blank" rel="noopener">초등부 파트사역자 혹은 준전임사역자를 모십니다</a>
+        <div class="meta">이루는교회 · 서울 관악구 봉천동</div>
+        <div class="dept">초등부</div>
+      </li>
+      <li data-text="(끌어올림)천호교회에서 동역자를 모십니다. (전임 또는 준전임 - 목사/강도사/전도사) 천호교회 서울 강동구 천호동 아래">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126945" target="_blank" rel="noopener">(끌어올림)천호교회에서 동역자를 모십니다. (전임 또는 준전임 - 목사/강도사/전도사)</a>
+        <div class="meta">천호교회 · 서울 강동구 천호동</div>
+        <div class="dept">아래</div>
+      </li>
+      <li data-text="성산교회에서 전임 사역자님을 모십니다. 성산교회 서울 양천구 신정동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126942" target="_blank" rel="noopener">성산교회에서 전임 사역자님을 모십니다.</a>
+        <div class="meta">성산교회 · 서울 양천구 신정동</div>
+        
+      </li>
+      <li data-text="세광교회에서 교육부서 파트 사역자(초등부)를 모십니다. 세광교회 서울 은평구 갈현동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126940" target="_blank" rel="noopener">세광교회에서 교육부서 파트 사역자(초등부)를 모십니다.</a>
+        <div class="meta">세광교회 · 서울 은평구 갈현동</div>
+        
+      </li>
+      <li data-text="아현교회 준전임 목사(혹은 강도사, 전도사) 청빙합니다. 아현교회 서울 마포구 아현동 중고등부 및 기타사역">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126938" target="_blank" rel="noopener">아현교회 준전임 목사(혹은 강도사, 전도사) 청빙합니다.</a>
+        <div class="meta">아현교회 · 서울 마포구 아현동</div>
+        <div class="dept">중고등부 및 기타사역</div>
+      </li>
+      <li data-text="[사귐의교회] 어린이부, 청소년부 준전임 사역자 초빙 사귐의교회 서울 강남구 도곡동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126927" target="_blank" rel="noopener">[사귐의교회] 어린이부, 청소년부 준전임 사역자 초빙</a>
+        <div class="meta">사귐의교회 · 서울 강남구 도곡동</div>
+        
+      </li>
+      <li data-text="청소년부 영혼들을 사랑으로 돌봐주실 전도사님을 찾습니다. 복음의빛교회 서울 송파구 문정동 청소년부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126924" target="_blank" rel="noopener">청소년부 영혼들을 사랑으로 돌봐주실 전도사님을 찾습니다.</a>
+        <div class="meta">복음의빛교회 · 서울 송파구 문정동</div>
+        <div class="dept">청소년부</div>
+      </li>
+      <li data-text="예수가족교회에서(담임목사 백금산) 함께 사역할 중고등부(파트) 사역자와 전임 부목사님을(청년2부) 모십니다. 예수가족교회 서울 마포구 서교동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126918" target="_blank" rel="noopener">예수가족교회에서(담임목사 백금산) 함께 사역할 중고등부(파트) 사역자와 전임 부목사님을(청년2부) 모십니다.</a>
+        <div class="meta">예수가족교회 · 서울 마포구 서교동</div>
+        
+      </li>
+      <li data-text="영등포 성은교회에서 유초등부 파트사역자(목사,강도사,전도사)를 모십니다. 성은교회 서울 영등포구 양평동1가 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126913" target="_blank" rel="noopener">영등포 성은교회에서 유초등부 파트사역자(목사,강도사,전도사)를 모십니다.</a>
+        <div class="meta">성은교회 · 서울 영등포구 양평동1가</div>
+        
+      </li>
+      <li data-text="마장동 성석교회에서 전임 사역자 1분을 모십니다 성석교회 서울 성동구 마장동 아래">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126910" target="_blank" rel="noopener">마장동 성석교회에서 전임 사역자 1분을 모십니다</a>
+        <div class="meta">성석교회 · 서울 성동구 마장동</div>
+        <div class="dept">아래</div>
+      </li>
+      <li data-text="[끌어올림] [서현교회] 유치부 교육부 교역자를 모십니다. 서현교회 서울 마포구 서교동 유치부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126909" target="_blank" rel="noopener">[끌어올림] [서현교회] 유치부 교육부 교역자를 모십니다.</a>
+        <div class="meta">서현교회 · 서울 마포구 서교동</div>
+        <div class="dept">유치부</div>
+      </li>
+      <li data-text="교구 담당과 유초등부 유치부 사역자를 모십니다. 명성교회 서울 강동구 천호동 교구 담당, 유초등부, 유치부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126908" target="_blank" rel="noopener">교구 담당과 유초등부 유치부 사역자를 모십니다.</a>
+        <div class="meta">명성교회 · 서울 강동구 천호동</div>
+        <div class="dept">교구 담당, 유초등부, 유치부</div>
+      </li>
+    </ul>
+  </section>
+  <section data-region="부산">
+    <h2>부산 <span class="count">8</span></h2>
+    <ul>
+      <li data-text="이삭교회에서 사역자를 모십니다. 이삭교회 부산 금정구 구서동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127047" target="_blank" rel="noopener">이삭교회에서 사역자를 모십니다.</a>
+        <div class="meta">이삭교회 · 부산 금정구 구서동</div>
+        
+      </li>
+      <li data-text="부산대청교회 전임여전도사와 교육(파트)사역자 청빙공고 부산대청교회 부산 금정구 구서동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127029" target="_blank" rel="noopener">부산대청교회 전임여전도사와 교육(파트)사역자 청빙공고</a>
+        <div class="meta">부산대청교회 · 부산 금정구 구서동</div>
+        
+      </li>
+      <li data-text="부산 벧엘교회에서 전임동역자를 모십니다. 벧엘교회 부산 금정구 서동 교육부 및 목양">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127017" target="_blank" rel="noopener">부산 벧엘교회에서 전임동역자를 모십니다.</a>
+        <div class="meta">벧엘교회 · 부산 금정구 서동</div>
+        <div class="dept">교육부 및 목양</div>
+      </li>
+      <li data-text="주례교회에서 파트타임 사역자(중고등부 혹은 청년부)를 모십니다. 주례교회 부산 사상구 주례동 중고등부 혹은 청년부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127002" target="_blank" rel="noopener">주례교회에서 파트타임 사역자(중고등부 혹은 청년부)를 모십니다.</a>
+        <div class="meta">주례교회 · 부산 사상구 주례동</div>
+        <div class="dept">중고등부 혹은 청년부</div>
+      </li>
+      <li data-text="부산동부교회에서 전임 및 파트 사역자를 정중히 모십니다!(끌어올림) 동부교회 부산 금정구 서동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126972" target="_blank" rel="noopener">부산동부교회에서 전임 및 파트 사역자를 정중히 모십니다!(끌어올림)</a>
+        <div class="meta">동부교회 · 부산 금정구 서동</div>
+        
+      </li>
+      <li data-text="[끌어올림] 부산 괴정중앙교회에서 주일학교 파트 사역자를 모십니다. 괴정중앙교회 부산 사하구 괴정동 주일학교">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126965" target="_blank" rel="noopener">[끌어올림] 부산 괴정중앙교회에서 주일학교 파트 사역자를 모십니다.</a>
+        <div class="meta">괴정중앙교회 · 부산 사하구 괴정동</div>
+        <div class="dept">주일학교</div>
+      </li>
+      <li data-text="부산대청교회 전임 여전도사 청빙공고 부산대청교회 부산 금정구 구서동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126926" target="_blank" rel="noopener">부산대청교회 전임 여전도사 청빙공고</a>
+        <div class="meta">부산대청교회 · 부산 금정구 구서동</div>
+        
+      </li>
+      <li data-text="[끌어올림] 부산 넘치는교회에서 동역자를 모십니다. 넘치는교회 부산 부산진구 양정동 청년부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126917" target="_blank" rel="noopener">[끌어올림] 부산 넘치는교회에서 동역자를 모십니다.</a>
+        <div class="meta">넘치는교회 · 부산 부산진구 양정동</div>
+        <div class="dept">청년부</div>
+      </li>
+    </ul>
+  </section>
+  <section data-region="전북">
+    <h2>전북 <span class="count">6</span></h2>
+    <ul>
+      <li data-text="군산서문교회에서 동역자를 정중히 모십니다. 군산서문교회 전북특별자치도 군산시 문화동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127056" target="_blank" rel="noopener">군산서문교회에서 동역자를 정중히 모십니다.</a>
+        <div class="meta">군산서문교회 · 전북특별자치도 군산시 문화동</div>
+        
+      </li>
+      <li data-text="(끌어올림) 2027년도 &quot;이리중앙교회&quot;에서 함께 동역할 사역자를 정중히 모십니다. 이리중앙교회 전북특별자치도 익산시 중앙동3가 전임, 파트">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127028" target="_blank" rel="noopener">(끌어올림) 2027년도 &quot;이리중앙교회&quot;에서 함께 동역할 사역자를 정중히 모십니다.</a>
+        <div class="meta">이리중앙교회 · 전북특별자치도 익산시 중앙동3가</div>
+        <div class="dept">전임, 파트</div>
+      </li>
+      <li data-text="(끌올)삼례동부교회 교육목사(전도사) 및 관리집사 모집 삼례동부교회 전북특별자치도 완주군 삼례리 유치부와 청년부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127027" target="_blank" rel="noopener">(끌올)삼례동부교회 교육목사(전도사) 및 관리집사 모집</a>
+        <div class="meta">삼례동부교회 · 전북특별자치도 완주군 삼례리</div>
+        <div class="dept">유치부와 청년부</div>
+      </li>
+      <li data-text="익산 예본교회에서 사역자를 모십니다. 익산 예본교회 전북특별자치도 익산시 부송동 유치부, 중고청">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127007" target="_blank" rel="noopener">익산 예본교회에서 사역자를 모십니다.</a>
+        <div class="meta">익산 예본교회 · 전북특별자치도 익산시 부송동</div>
+        <div class="dept">유치부, 중고청</div>
+      </li>
+      <li data-text="삼례동부교회 교육목사(전도사) 및 관리집사 모집 삼례동부교회 전북특별자치도 완주군 삼례리 청년부 유치부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126947" target="_blank" rel="noopener">삼례동부교회 교육목사(전도사) 및 관리집사 모집</a>
+        <div class="meta">삼례동부교회 · 전북특별자치도 완주군 삼례리</div>
+        <div class="dept">청년부 유치부</div>
+      </li>
+      <li data-text="파송할 선교사님을 모십니다 김제영광 전북특별자치도 김제시 신풍동 파송선교사">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126936" target="_blank" rel="noopener">파송할 선교사님을 모십니다</a>
+        <div class="meta">김제영광 · 전북특별자치도 김제시 신풍동</div>
+        <div class="dept">파송선교사</div>
+      </li>
+    </ul>
+  </section>
+  <section data-region="경남">
+    <h2>경남 <span class="count">4</span></h2>
+    <ul>
+      <li data-text="마산 소망교회에서 전임 부목사님을 모십니다. 마산소망교회 경남 창원시 마산회원구 삼계리 교육부서 및 사역총괄">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127055" target="_blank" rel="noopener">마산 소망교회에서 전임 부목사님을 모십니다.</a>
+        <div class="meta">마산소망교회 · 경남 창원시 마산회원구 삼계리</div>
+        <div class="dept">교육부서 및 사역총괄</div>
+      </li>
+      <li data-text="[끌어 올림] 진주성북교회에서 전임 사역자를 모십니다. 진주성북교회 경남 진주시 신안동 교구 및 주일학교 부서">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127051" target="_blank" rel="noopener">[끌어 올림] 진주성북교회에서 전임 사역자를 모십니다.</a>
+        <div class="meta">진주성북교회 · 경남 진주시 신안동</div>
+        <div class="dept">교구 및 주일학교 부서</div>
+      </li>
+      <li data-text="[경남 사천] 전임 부목사님을 모십니다. 사천교회 경남 사천시 평화리 아래">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127030" target="_blank" rel="noopener">[경남 사천] 전임 부목사님을 모십니다.</a>
+        <div class="meta">사천교회 · 경남 사천시 평화리</div>
+        <div class="dept">아래</div>
+      </li>
+      <li data-text="[끌어 올림] 진주성북교회에서 전임 사역자를 모십니다. 진주성북교회 경남 진주시 신안동 교구 및 주일학교 부서">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126906" target="_blank" rel="noopener">[끌어 올림] 진주성북교회에서 전임 사역자를 모십니다.</a>
+        <div class="meta">진주성북교회 · 경남 진주시 신안동</div>
+        <div class="dept">교구 및 주일학교 부서</div>
+      </li>
+    </ul>
+  </section>
+  <section data-region="전남광주">
+    <h2>전남광주 <span class="count">4</span></h2>
+    <ul>
+      <li data-text="광주동명교회에서 전임부목사님을 모십니다. 광주동명교회 전남광주통합특별시 동구 동명동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127050" target="_blank" rel="noopener">광주동명교회에서 전임부목사님을 모십니다.</a>
+        <div class="meta">광주동명교회 · 전남광주통합특별시 동구 동명동</div>
+        
+      </li>
+      <li data-text="함평중앙교회에서 전임사역자를 모십니다. 함평중앙교회 전남광주통합특별시 함평군 기각리 교구 행정 및 교육부서">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126982" target="_blank" rel="noopener">함평중앙교회에서 전임사역자를 모십니다.</a>
+        <div class="meta">함평중앙교회 · 전남광주통합특별시 함평군 기각리</div>
+        <div class="dept">교구 행정 및 교육부서</div>
+      </li>
+      <li data-text="성만교회(나주)에서 사역자를 모십니다. 성만교회 전남광주통합특별시 나주시 덕례리 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126953" target="_blank" rel="noopener">성만교회(나주)에서 사역자를 모십니다.</a>
+        <div class="meta">성만교회 · 전남광주통합특별시 나주시 덕례리</div>
+        
+      </li>
+      <li data-text="[ 여수제일교회 ]에서 함께 하실 동역자를 모십니다 여수제일교 전남광주통합특별시 여수시 고소동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126937" target="_blank" rel="noopener">[ 여수제일교회 ]에서 함께 하실 동역자를 모십니다</a>
+        <div class="meta">여수제일교 · 전남광주통합특별시 여수시 고소동</div>
+        
+      </li>
+    </ul>
+  </section>
+  <section data-region="인천">
+    <h2>인천 <span class="count">4</span></h2>
+    <ul>
+      <li data-text="섬김의교회에서 함께 사역할 전임사역자를 모십니다. 섬김의교회 인천 계양구 계산동 ">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127034" target="_blank" rel="noopener">섬김의교회에서 함께 사역할 전임사역자를 모십니다.</a>
+        <div class="meta">섬김의교회 · 인천 계양구 계산동</div>
+        
+      </li>
+      <li data-text="(끌어올림) 영천교회 중고등부 준전임 또는 유치부 파트 사역자 각 1명을 청빙합니다 영천교회 인천 미추홀구 주안동 중고등부, 유치부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127026" target="_blank" rel="noopener">(끌어올림) 영천교회 중고등부 준전임 또는 유치부 파트 사역자 각 1명을 청빙합니다</a>
+        <div class="meta">영천교회 · 인천 미추홀구 주안동</div>
+        <div class="dept">중고등부, 유치부</div>
+      </li>
+      <li data-text="수봉산교회에서 파트 사역자(유치부)를 모십니다. 수봉산교회 인천 미추홀구 도화동 유치부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126951" target="_blank" rel="noopener">수봉산교회에서 파트 사역자(유치부)를 모십니다.</a>
+        <div class="meta">수봉산교회 · 인천 미추홀구 도화동</div>
+        <div class="dept">유치부</div>
+      </li>
+      <li data-text="인천 학익장로교회에서 파트사역자를 모십니다. 학익장로교회 인천 미추홀구 학익동 교육부 파트 사역">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126934" target="_blank" rel="noopener">인천 학익장로교회에서 파트사역자를 모십니다.</a>
+        <div class="meta">학익장로교회 · 인천 미추홀구 학익동</div>
+        <div class="dept">교육부 파트 사역</div>
+      </li>
+    </ul>
+  </section>
+  <section data-region="대전">
+    <h2>대전 <span class="count">4</span></h2>
+    <ul>
+      <li data-text="대전 참아름다운교회에서 전임 교역자를 모집합니다. 참아름다운교회 대전 동구 용전동 행정 및 교육부서">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127033" target="_blank" rel="noopener">대전 참아름다운교회에서 전임 교역자를 모집합니다.</a>
+        <div class="meta">참아름다운교회 · 대전 동구 용전동</div>
+        <div class="dept">행정 및 교육부서</div>
+      </li>
+      <li data-text="대전서문교회_전임동역자(남)를 청빙합니다(부목사, 강도사, 전도사) 대전서문교회 대전 중구 문화동 교구, 주일학교">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127011" target="_blank" rel="noopener">대전서문교회_전임동역자(남)를 청빙합니다(부목사, 강도사, 전도사)</a>
+        <div class="meta">대전서문교회 · 대전 중구 문화동</div>
+        <div class="dept">교구, 주일학교</div>
+      </li>
+      <li data-text="[끌올]대전대일장로교회에서 전임사역자를 초빙합니다. 대전대일장로교회 대전 서구 변동 행정, 교구 등">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127006" target="_blank" rel="noopener">[끌올]대전대일장로교회에서 전임사역자를 초빙합니다.</a>
+        <div class="meta">대전대일장로교회 · 대전 서구 변동</div>
+        <div class="dept">행정, 교구 등</div>
+      </li>
+      <li data-text="[끌올]대전대일장로교회에서 전임사역자를 초빙합니다. 대전대일장로교회 대전 서구 변동 행정, 교구 등">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126916" target="_blank" rel="noopener">[끌올]대전대일장로교회에서 전임사역자를 초빙합니다.</a>
+        <div class="meta">대전대일장로교회 · 대전 서구 변동</div>
+        <div class="dept">행정, 교구 등</div>
+      </li>
+    </ul>
+  </section>
+  <section data-region="대구">
+    <h2>대구 <span class="count">2</span></h2>
+    <ul>
+      <li data-text="공군 대구기지교회에서 함께 할 사역자를 구합니다. 공군 대구기지교회 대구 동구 검사동 아동부/어와나">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127053" target="_blank" rel="noopener">공군 대구기지교회에서 함께 할 사역자를 구합니다.</a>
+        <div class="meta">공군 대구기지교회 · 대구 동구 검사동</div>
+        <div class="dept">아동부/어와나</div>
+      </li>
+      <li data-text="공군 대구기지교회에서 함께 할 사역자를 구합니다. 공군대구기지교회 대구 동구 검사동 유치부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127052" target="_blank" rel="noopener">공군 대구기지교회에서 함께 할 사역자를 구합니다.</a>
+        <div class="meta">공군대구기지교회 · 대구 동구 검사동</div>
+        <div class="dept">유치부</div>
+      </li>
+    </ul>
+  </section>
+  <section data-region="충남">
+    <h2>충남 <span class="count">2</span></h2>
+    <ul>
+      <li data-text="[천안] 여명교회에서 2027년을 함께 할 전임교역자 및 파트교역자를 모십니다. 여명교회 충남 천안시 동남구 신방동 교구(0명), 중등부(0명)">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127015" target="_blank" rel="noopener">[천안] 여명교회에서 2027년을 함께 할 전임교역자 및 파트교역자를 모십니다.</a>
+        <div class="meta">여명교회 · 충남 천안시 동남구 신방동</div>
+        <div class="dept">교구(0명), 중등부(0명)</div>
+      </li>
+      <li data-text="천안성은교회에서 동역자(심방전도사님(여))를 모십니다. 천안성은교회 충남 천안시 서북구 쌍용동 심방(교구)">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127013" target="_blank" rel="noopener">천안성은교회에서 동역자(심방전도사님(여))를 모십니다.</a>
+        <div class="meta">천안성은교회 · 충남 천안시 서북구 쌍용동</div>
+        <div class="dept">심방(교구)</div>
+      </li>
+    </ul>
+  </section>
+  <section data-region="충북">
+    <h2>충북 <span class="count">1</span></h2>
+    <ul>
+      <li data-text="제천성도교회에서 전임교역자를 모십니다. (끌어올림) 제천성도교회 충북 제천시 청전동 전임">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1127041" target="_blank" rel="noopener">제천성도교회에서 전임교역자를 모십니다. (끌어올림)</a>
+        <div class="meta">제천성도교회 · 충북 제천시 청전동</div>
+        <div class="dept">전임</div>
+      </li>
+    </ul>
+  </section>
+  <section data-region="경북">
+    <h2>경북 <span class="count">1</span></h2>
+    <ul>
+      <li data-text="교육전도사청빙 김천서문교회 경북 김천시 평화동 유초등부">
+        <a href="https://www.csu.ac.kr/?m1=page_ministry_detail&amp;menu_id=1110&amp;board_content_id=1126974" target="_blank" rel="noopener">교육전도사청빙</a>
+        <div class="meta">김천서문교회 · 경북 김천시 평화동</div>
+        <div class="dept">유초등부</div>
+      </li>
+    </ul>
+  </section>
+  <p class="empty" id="none" hidden>검색 결과가 없어요.</p>
+  <footer>
+    지난 날짜
+    <div class="days"><a href="./2026-11-12.html" class="current">11/12(목)</a><a href="./2026-11-11.html">11/11(수)</a><a href="./2026-11-10.html">11/10(화)</a><a href="./2026-11-09.html">11/9(월)</a><a href="./2026-11-08.html">11/8(일)</a><a href="./2026-11-07.html">11/7(토)</a><a href="./2026-11-06.html">11/6(금)</a><a href="./2026-11-05.html">11/5(목)</a><a href="./2026-11-04.html">11/4(수)</a><a href="./2026-11-02.html">11/2(월)</a><a href="./2026-11-01.html">11/1(일)</a><a href="./2026-10-31.html">10/31(토)</a><a href="./2026-10-30.html">10/30(금)</a><a href="./2026-10-29.html">10/29(목)</a></div>
+  </footer>
+</main>
+<script>
+  const q = document.getElementById('q');
+  q.addEventListener('input', () => {
+    const words = q.value.toLowerCase().split(/\s+/).filter(Boolean);
+    let any = false;
+    document.querySelectorAll('section').forEach((sec) => {
+      let n = 0;
+      sec.querySelectorAll('li').forEach((li) => {
+        const hit = words.every((w) => li.dataset.text.includes(w));
+        li.hidden = !hit;
+        if (hit) n++;
+      });
+      sec.hidden = n === 0;
+      sec.querySelector('.count').textContent = n;
+      if (n) any = true;
+    });
+    document.getElementById('none').hidden = any;
+  });
+  document.querySelectorAll('[data-go]').forEach((chip) => chip.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.querySelector('section[data-region="' + chip.dataset.go + '"]')?.scrollIntoView({ behavior: 'smooth' });
+  }));
+</script>
+</body>
+</html>
